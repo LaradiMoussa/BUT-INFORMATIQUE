@@ -1,0 +1,12 @@
+# R1.10 Anglais
+
+## AEKLYS
+
+Je vais vous présenter une technologie qui est très peu utilisée aujourd'hui, mais qui, selon moi, est une future technologie à la mode. Elle s'appelle AEKLYS, c'est un bijou qui ressemble à une bague, mais qui est très utile au quotidien contrairement à une simple bague. Elle est connectée et peut servir de carte de paiement sans contact en saisissant auparavant votre carte dans l'application dédiée. De plus, elle sert aussi de pass pour accéder à certaines choses comme déverrouiller votre ordinateur, ouvrir votre porte d'entrée...
+Cette bague embarque la technologie NFC, c'est une technologie qui permet l'échange d'informations entre deux appareils via le sans contact. Si votre ordinateur possède un moyen de le déverrouiller via NFC, ce sera bien plus rapide que de saisir votre mot de passe.
+Mais aussi, pour prendre les transports, au lieu de chercher sans arrêt votre carte de bus, elle sera enregistrée dans la bague et vous permettra de valider votre trajet juste en passant votre bague sur la borne. C'est une révolution pour toutes ces choses, mais surtout pour une seule, c'est qu'elle ne se recharge pas. Non, vous ne devez pas encore avoir un nouveau chargeur et la mettre à charger tous les soirs. C'est une technologie de demain qui reste tout de même très abordable et très esthétique.
+
+
+I'm going to introduce you to a technology that is not very used today, but which I think is a trendy future technology. Its name is AEKLYS, it is a jewel that looks like a ring, but which is very useful in everyday life unlike a simple ring. It is connected and can be used as a contactless payment card by first entering your card in the dedicated application. In addition, it also serves as a pass to access certain things such as unlocking your computer, opening your front door ...
+This ring embeds NFC technology, it is a technology that allows the exchange of information between two devices via contactless. If your computer has a way to unlock it via NFC, it will be much faster than entering your password.
+But also, to take transport, instead of constantly looking for your bus card, it will be recorded in the ring and will allow you to validate your trip just by passing your ring on the terminal. It's a revolution for all these things, but especially for one, is that it doesn't need to be charge. No, you don't have to have a new charger yet and put it to charge every night. It is a technology of tomorrow that is still very affordable and very aesthetic.
