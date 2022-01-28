@@ -1,0 +1,53 @@
+
+---A PLACER DANS SECTION Observateurs :
+----------------------------------------
+
+bool sontVides(const UnePile &tourA, const UnePile &tourB);
+// But : retourne vrai si les deux tours tourA et tourB sont vides, faux sinon
+
+bool sontVides(const UnePile &tourA, const UnePile &tourB)
+{
+    return (estVide(tourA) && estVide(tourB));
+}
+
+
+---A PLACER DANS SECTION Algorithmes de résolution des tours de Hanoi :
+-----------------------------------------------------------------------
+
+void resoudreToursHanoiAutomatique(unsigned int nbDisques);
+// But : résoudre automatiquement les tours de Hanoi avec nbDisques disques
+
+
+void resoudreToursHanoiAutomatique(unsigned int nbDisques)
+{
+    UnePile lesTours[NB_TOURS];
+    unsigned int posTourAvecPlusPetitDisque = 0;
+
+    // Préparer les tours
+    initialiserTours(lesTours);
+    remplirTour(nbDisques, lesTours[0]);
+    afficherTours(lesTours);
+    cout << endl << "-----------------------------------------------" << endl<< endl;
+
+    // lesTours >> déplacer les disques >> lesTours
+    while (true)
+    {
+        if (sontVides(lesTours[0], lesTours[1]))
+        {
+            break;
+        }
+
+        deplacerPetit(lesTours, posTourAvecPlusPetitDisque);
+        afficherTours(lesTours); cout << endl;
+
+        if (sontVides(lesTours[0], lesTours[1]))
+        {
+            break;
+        }
+
+        deplacerAutre(lesTours, posTourAvecPlusPetitDisque);
+        afficherTours(lesTours); cout << endl << endl;
+    }
+}
+
+
