@@ -1,0 +1,211 @@
+#Téléchargement des archives .tar.gz dans mon disque /Downloads
+
+Décompresser les archives :
+tar -xzvf [nomarchive].tar.gz
+
+Création des dossiers pour mettre les docs : 
+mkdir app1 app2 app3
+
+Copie des fichiers juste aprés décompression : 
+cp README.md installer scanner app1
+cp README.md installer scanner app2
+cp README.md installer scanner app3
+
+Copie des dossiers dans mon espace : 
+cp -r ../Downloads/app1 SAE1.03-Installation-Poste
+cp -r ../Downloads/app2 SAE1.03-Installation-Poste
+cp -r ../Downloads/app3 SAE1.03-Installation-Poste
+
+//////////////////////////////////////
+APPLICATION 1 (dans le répertoire app1)
+//////////////////////////////////////
+
+Lecture du fichier README.md :
+cat README.md
+
+Création du fichier config.txt :
+touch config.txt
+
+Ecriture du chemin absolu dans config.txt :
+nano config.txt
+/BUT_INFO/SAE1.03-Installation-Poste/app1
+
+Installation :
+./installer
+*sortie* : Votre scanner a rencontré un problème, consulter journal.log
+
+Consultation journal.log :
+nano journal.log
+*sortie* : Le fichier de configuration n'est pas paramétré correctement
+
+Changement du chemin absolu : 
+nano config.txt
+/users/info/cnaudi/BUT_INFO/SAE1.03-Installation-Poste/app1
+
+Installation : 
+./installer
+*sortie* : L'installation s'est déroulé avec succès
+
+Installation scanner :
+./scanner
+*sortie* : F_theecj.dat doit etre totalement accessible pour vous et en lecture et ecriture pour les autres
+
+Attribution des droits :
+chmod g+r F_theecj.dat 
+chmod g+w F_theecj.dat 
+chmod o+r F_theecj.dat 
+chmod o+w F_theecj.dat 
+
+Installation scanner :
+./scanner
+*sortie* : Scan et récolte effectués avec succès
+
+//////////////////////////////////////
+APPLICATION 2 (dans le répertoire app2)
+//////////////////////////////////////
+
+Lecture du fichier README.md :
+cat README.md
+
+Création du fichier config.txt :
+touch config.txt
+
+Ecriture du chemin absolu : 
+nano config.txt
+/users/info/cnaudi/BUT_INFO/SAE1.03-Installation-Poste/app2
+
+Installation : 
+./installer
+*sortie* : L'installation s'est déroulé avec succès
+
+Installation scanner :
+./scanner
+*sortie* : F_kjfyxn.dat est introuvable dans le dossier data
+
+Déplacement du fichier : 
+mv F_kjfyxn.dat data
+
+Installation scanner :
+./scanner
+*sortie* : Le fichier F_kjfyxn.dat  doit etre accessible totalement pour l'utilisateur et seulement en lecture et ecriture pour le groupe
+
+Attribution des droits :
+chmod g+r F_kjfyxn.dat 
+chmod o-w F_kjfyxn.dat
+
+Installation scanner :
+./scanner
+*sortie* : Le fichier F_snvhij.dat doit etre accessible totalement pour l'utilisateur et seulement en lecture pour les autres
+
+Attribution des droits :
+chmod g-r F_snvhij.dat 
+chmod o+r F_snvhij.dat
+
+Installation scanner :
+./scanner
+*sortie* : Scan et récolte effectués avec succès
+
+//////////////////////////////////////
+APPLICATION 3 (dans le répertoire app3)
+//////////////////////////////////////
+
+Lecture du fichier README.md :
+cat README.md
+
+Création du fichier config.txt :
+touch config.txt
+
+Ecriture du chemin absolu : 
+nano config.txt
+/users/info/cnaudi/BUT_INFO/SAE1.03-Installation-Poste/app3
+
+Installation : 
+./installer
+*sortie* : L'installation s'est déroulé avec succès
+
+Installation scanner :
+./scanner
+*sortie* : cache doit etre accessible totalement pour l'utilisateur et lecture/ecriture au groupe et autres
+
+Attribution des droits :
+chmod g+rw cache
+chmod o+rw cache
+
+Installation scanner :
+./scanner
+*sortie* : Le fichier F_pxhvyi.dat n'a pas été trouvé dans le repertoire cache
+
+Deplacement du fichier F_pxhvyi.dat :
+mv F_pxhvyi.dat cache
+
+Installation scanner :
+./scanner
+*sortie* : Le fichier F_szmzck.dat n'a pas été trouvé dans le repertoire cache
+
+Recherche du fichier F_szmzck.dat :
+find -name "F_szmzck.dat"
+*sortie* : ./Dos_ygrdmk/F_szmzck.dat
+
+Deplacement du fichier F_szmzck.dat :
+mv Dos_ygrdmk/F_szmzck.dat cache
+
+Installation scanner :
+./scanner
+*sortie* : Dos_ygrdmk/F_hgcesh.dat doit etre accessible totalement a moi et lecture/ecriture au groupe
+
+Attribution des droits :
+chmod g+w F_hgcesh.dat
+
+Installation scanner :
+./scanner
+*sortie* : Scan et récolte effectués avec succès
+
+//////////////////////////////////////
+APPLICATION 3 (dans le répertoire app3)
+//////////////////////////////////////
+
+Lecture du fichier README.md :
+cat README.md
+
+Création du fichier config.txt Ecriture du chemin absolu : :
+pwd > config.txt
+
+Installation : 
+./installer
+*sortie* : L'installation s'est déroulé avec succès
+
+Installation scanner :
+./scanner
+*sortie* : cache doit etre accessible totalement pour l'utilisateur et lecture/ecriture au groupe et autres
+
+Attribution des droits :
+chmod 766 cache
+
+Installation scanner :
+./scanner
+*sortie* : Le fichier F_pxhvyi.dat n'a pas été trouvé dans le repertoire cache
+
+Deplacement du fichier F_pxhvyi.dat :
+mv F_pxhvyi.dat cache
+
+Installation scanner :
+./scanner
+*sortie* : Le fichier F_szmzck.dat n'a pas été trouvé dans le repertoire cache
+
+Recherche du fichier F_szmzck.dat :
+find -name "F_szmzck.dat"
+*sortie* : ./Dos_ygrdmk/F_szmzck.dat
+
+Deplacement du fichier F_szmzck.dat :
+mv Dos_ygrdmk/F_szmzck.dat cache
+
+Installation scanner :
+./scanner
+*sortie* : Dos_ygrdmk/F_hgcesh.dat doit etre accessible totalement a moi et lecture/ecriture au groupe
+
+Attribution des droits :
+chmod 760 F_hgcesh.dat
+
+Installation scanner :
+./scanner
+*sortie* : Scan et récolte effectués avec succès
