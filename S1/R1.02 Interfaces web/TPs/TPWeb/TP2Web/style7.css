@@ -1,0 +1,109 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+aside {
+    background-color: #4E5875;
+    color: white;
+}
+
+.grille h3 {
+    color: #4E5875;
+}
+
+#PhotoIdentite {
+    height: 100px;
+    width: 100px;
+}
+
+article strong {
+    color : #5CE2F2;
+}
+
+.annee {
+    color: #4E5875;
+    font-weight: bold;
+}
+
+.diplome {
+    color: black;
+    font-weight: bold;
+}
+
+.etablissement {
+    color: #4E5875;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+}
+
+.classeAct {
+    background-color:cornflowerblue;
+
+}
+
+.un {
+    grid-column: 1;
+    grid-row: 1;
+    /*background-color:cornflowerblue;*/
+}
+
+.deux {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trois {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.quatre {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.cinq {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.sept {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.huit{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.neuf {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.dix {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.onze {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.douze {
+    grid-column: 2;
+    grid-row: 8;
+}

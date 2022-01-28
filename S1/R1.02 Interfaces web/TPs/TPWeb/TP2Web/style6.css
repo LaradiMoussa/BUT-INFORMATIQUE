@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+aside {
+    background-color: #4E5875;
+    color: white;
+}
+
+.grille h3 {
+    color: #4E5875;
+}
+
+#PhotoIdentite {
+    height: 100px;
+    width: 100px;
+}
+
+article strong {
+    color : #5CE2F2;
+}
+
+.annee {
+    color: #4E5875;
+    font-weight: bold;
+}
+
+.diplome {
+    color: black;
+    font-weight: bold;
+}
+
+.etablissement {
+    color: #4E5875;
+}

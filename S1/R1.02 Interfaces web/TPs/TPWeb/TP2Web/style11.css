@@ -1,0 +1,285 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+aside {
+    background-color: #4E5875;
+    color: white;
+}
+
+.grille h3 {
+    color: #4E5875;
+}
+
+#PhotoIdentite {
+    height: 100px;
+    width: 165px;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article strong {
+    color : #5CE2F2;
+}
+
+.profil, .formation, .experience, #formation-title, .grille {
+    padding-left: 0px;
+}
+
+.annee {
+    color: #4E5875;
+    font-weight: bold;
+}
+
+.diplome {
+    color: black;
+    font-weight: bold;
+}
+
+.etablissement {
+    color: #4E5875;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 20px;
+}
+
+.quatre, .cinq, .sept, .huit, .dix, .onze {
+    margin-top: 20px;
+}
+
+.un {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.deux {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.trois {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.quatre {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.cinq {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.six {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.sept {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.huit{
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.neuf {
+    grid-column: 2;
+    grid-row: 6;
+}
+
+.dix {
+    grid-column: 1;
+    grid-row: 7;
+}
+
+.onze {
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.douze {
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.date {
+    color: #4E5875;
+    font-weight: bold;
+}
+
+.date {
+    padding: 10px;
+}
+
+.job {
+    font-weight: bold;
+}
+
+.lieu {
+    color: #4E5875;
+}
+
+.desc {
+    font-weight: lighter;
+}
+section article td {
+    height: 100px;
+}
+
+td, p {
+    vertical-align:baseline;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 36% 1fr;
+    grid-template-rows: 1fr;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: cadetblue;
+}
+
+.title {
+    font-weight:bold;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+aside {
+    min-width: 210px;
+    grid-column: 1 / 1;
+    grid-row: 3;
+}
+
+.nom {
+    text-align: center;
+}
+
+section {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+.dot-fill {
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(175, 175, 175);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot {
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(73, 73, 73);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.name {
+    margin-right: 15%;
+}
+
+.fas {
+    margin-top: 10px;
+}
+
+.icon i {
+    margin: 20px 0 0 5%;
+}
+
+article {
+    margin-left: 5%;
+}
+
+nav {
+    grid-column: span 3;
+}
+
+/*NAVBAR Responsive*/
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(116, 186, 190);
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover:not(.active) {
+    color: #111;
+}
+
+ul.navbar li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.navbar li.right, 
+    ul.navbar li {float: none;}
+}
+
+.titreCat {
+    display: flex; 
+    flex-direction: row;
+    margin: 30px 0 10px 0;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.titreCat:after { 
+    content: ""; 
+    flex: 1 1; 
+    border-bottom: 2px solid #fff; 
+    margin: auto 20px;
+
+}
+
+footer {
+    background-color: cadetblue;
+    height: 60px;
+}
+
+footer .mail {
+    padding: 20px;
+    text-align: center;
+}
+
+footer .mail a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .mail a:hover {
+    color: black;
+}
