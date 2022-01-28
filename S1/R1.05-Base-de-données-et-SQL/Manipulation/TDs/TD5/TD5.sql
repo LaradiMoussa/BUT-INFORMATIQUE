@@ -1,0 +1,34 @@
+/*1.*/
+SELECT nom
+FROM EQUIPE
+WHERE nom = (SELECT MIN (budget) FROM EQUIPE);
+
+/*2.*/
+SELECT nom
+FROM CLIENT
+WHERE numClient IN (SELECT numClient FROM COMMANDE WHERE date = '09/11/20');
+
+/*3.*/
+SELECT nom
+FROM CLIENT
+WHERE numClient NOT IN (SELECT numClient FROM COMMANDE WHERE date = '09/11/20');
+
+/*4.*/
+SELECT *
+FROM CLIENT CL
+WHERE EXISTS (SELECT * FROM COMMANDE CO WHERE CL.numClient = CO.numClient);
+
+/*5.*/
+SELECT *
+FROM CLIENT CL
+WHERE NOT EXISTS (SELECT * FROM COMMANDE CO WHERE CL.numClient = CO.numClient);
+
+/*6.*/
+SELECT numClient
+FROM COMMANDE
+WHERE quantite > ALL (SELECT quantite FROM COMMANDE WHERE numClient = 1);
+
+/*8.*/
+SELECT numClient
+FROM COMMANDE
+WHERE quantite > ANY (SELECT quantite FROM COMMANDE WHERE numClient = 1);
